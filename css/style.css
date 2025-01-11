@@ -1,0 +1,37 @@
+body{
+    background-color:#2ecc71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+input{
+    font-size: 10em;
+    text-align: center;
+    width: 200px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 250ms;
+}
+
+.error{
+
+    background-color: #e74d3c6b;
+    border: 2px solid #e74d3c6b;
+}
+
+.fa-circle-check{
+    font-size: 16em;
+    color: white;
+    display: none;
+}
+
+.fa-circle-check:hover{
+    cursor: pointer;
+}
