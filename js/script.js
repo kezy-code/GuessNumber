@@ -3,6 +3,7 @@ $(document).ready(function() {
        
     /**Input */
     let input = $("input[type=text]")
+    let body = document.querySelector("body")
 
     /**génère un nombre aléatoire */
 
@@ -33,10 +34,13 @@ $(document).ready(function() {
 
             /**Ajouter la class error (css), animated et bounce (animate.css => link) */
             input.addClass("error animated bounce")
-
+            body.style.backgroundColor ="#e74c3c"
+            
             /**Au bout d'1 sec enlevé les class */
             setTimeout(function() {
                 input.removeClass("error animated bounce")
+                body.style.backgroundColor = "#2ecc71"
+
             }, 1000)
 
             console.log("Loose")
